@@ -1,13 +1,18 @@
 import { Link } from "react-router-dom";
 import "./styles.css";
 
+import mediScan from "../../assets/MediscanCor.png";
+
 export const NavbarComponents = () => {
   return (
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        <Link class="navbar-brand" href="#">
-          MediScanAI
-        </Link>
+        <span className="img-home">
+          <img src={mediScan} alt="" />
+          <Link class="navbar-brand" href="#">
+            MediScanAI
+          </Link>
+        </span>
         <button
           class="navbar-toggler"
           type="button"

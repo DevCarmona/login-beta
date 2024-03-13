@@ -1,5 +1,3 @@
-
-
 import { AppRouter } from './routes';
 import './assets/global.css';
 
