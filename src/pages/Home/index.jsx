@@ -1,6 +1,6 @@
 import { LayoutHomeComponents } from "../../components/layoutHomeComponents/home-index";
 import { NavbarComponents } from "../../components/navbarComponents";
-import { UploadMultipleImgComponents } from "../../components/uploadMultipleimgComponents";
+import { UploadComponents } from "../../components/uploadComponents";
 
 import mediScan from "../../assets/MediscanCor.png";
 import { Link } from "react-router-dom";
@@ -11,8 +11,8 @@ export const Home = () => {
       <NavbarComponents />
       <LayoutHomeComponents>
         <form className="home-form">
-          <span className="home-form-title">Upload de Imagens</span>
-        <UploadMultipleImgComponents />
+          <span className="home-form-title">Inserir imagens</span>
+        <UploadComponents />
         </form>
       </LayoutHomeComponents>
     </>

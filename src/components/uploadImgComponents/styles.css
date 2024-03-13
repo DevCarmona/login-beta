@@ -1,0 +1,56 @@
+.msg-upload {
+    color: white;
+}
+
+.msg-arquivos {
+    color: white;
+}
+
+.custum-file-upload {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    gap: 10px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 10px;
+
+    transition: all .6s ease;
+  }
+  
+  .custum-file-upload .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .custum-file-upload .icon svg {
+    height: 30px;
+    fill: rgb(0, 0, 0);
+  }
+  
+  .custum-file-upload .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .custum-file-upload .text span {
+    font-weight: 600;
+    font-size: 15px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+  }
+  
+  .custum-file-upload input {
+    display: none;
+  }
+  
+  .custum-file-upload:hover {
+    box-shadow: 0 10px 15px -3px #cfcfcf, 0 4px 6px -2px #022744;
+  }
+  

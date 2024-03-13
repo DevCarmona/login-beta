@@ -5,17 +5,17 @@ import mediScan from "../../assets/MediscanCor.png";
 
 export const NavbarComponents = () => {
   return (
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
+    <nav className="navbar navbar-expand-lg bg-body-tertiary">
+      <div className="container-fluid">
         <span className="img-home">
           <img src={mediScan} alt="" />
-          <Link class="navbar-brand" href="#">
+          <Link className="navbar-brand" href="#">
             MediScanAI
           </Link>
         </span>
 
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -23,26 +23,26 @@ export const NavbarComponents = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <Link class="nav-link active" aria-current="page" href="#">
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            <li className="nav-item">
+              <Link className="nav-link active" aria-current="page" href="#">
                 Home
               </Link>
             </li>
 
-            <li class="nav-item">
-              <Link class="nav-link" href="#">
+            <li className="nav-item">
+              <Link className="nav-link" href="#">
                 Link
               </Link>
             </li>
 
-            <li class="nav-item dropdown">
+            <li className="nav-item dropdown">
               <Link
-                class="nav-link dropdown-toggle"
+                className="nav-link dropdown-toggle"
                 href="#"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -51,21 +51,21 @@ export const NavbarComponents = () => {
                 Dropdown
               </Link>
 
-              <ul class="dropdown-menu">
+              <ul className="dropdown-menu">
                 <li>
-                  <Link class="dropdown-item" href="#">
+                  <Link className="dropdown-item" href="#">
                     Action
                   </Link>
                 </li>
 
                 <li>
-                  <Link class="dropdown-item" href="#">
+                  <Link className="dropdown-item" href="#">
                     Another action
                   </Link>
                 </li>
 
                 <li>
-                  <Link class="dropdown-item" href="#">
+                  <Link className="dropdown-item" href="#">
                     Something else here
                   </Link>
                 </li>
