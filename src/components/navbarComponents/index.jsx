@@ -13,6 +13,7 @@ export const NavbarComponents = () => {
             MediScanAI
           </Link>
         </span>
+
         <button
           class="navbar-toggler"
           type="button"
@@ -24,6 +25,7 @@ export const NavbarComponents = () => {
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
@@ -31,11 +33,13 @@ export const NavbarComponents = () => {
                 Home
               </Link>
             </li>
+
             <li class="nav-item">
               <Link class="nav-link" href="#">
                 Link
               </Link>
             </li>
+
             <li class="nav-item dropdown">
               <Link
                 class="nav-link dropdown-toggle"
@@ -46,17 +50,20 @@ export const NavbarComponents = () => {
               >
                 Dropdown
               </Link>
+
               <ul class="dropdown-menu">
                 <li>
                   <Link class="dropdown-item" href="#">
                     Action
                   </Link>
                 </li>
+
                 <li>
                   <Link class="dropdown-item" href="#">
                     Another action
                   </Link>
                 </li>
+
                 <li>
                   <Link class="dropdown-item" href="#">
                     Something else here
