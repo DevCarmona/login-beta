@@ -1,6 +1,7 @@
 import { LayoutHomeComponents } from "../../components/layoutHomeComponents/home-index";
 
 import mediScan from "../../assets/MediscanCor.png"
+import { Link } from "react-router-dom";
 
 export const Home = () => { 
 
