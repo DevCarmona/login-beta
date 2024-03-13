@@ -203,6 +203,8 @@ body, html {
     font-size: 30px;
     color: azure;
 
+    padding-bottom: 10px;
+
     line-height: 1.2;
     text-align: center;
 }
