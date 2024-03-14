@@ -1,5 +1,5 @@
 div {
-    color: black;
+    
 }
 
 .card {
@@ -7,8 +7,11 @@ div {
     box-shadow: 0 0 5px #ffdfdf;
     border-radius: 5px;
     overflow: hidden;
-    /* margin-top: 200px;
-    width: 500px; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
 }
 
 .card .top {
