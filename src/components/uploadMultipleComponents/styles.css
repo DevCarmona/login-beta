@@ -2,16 +2,19 @@ div {
     
 }
 
+.card-container {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 .card {
     padding: 10px;
-    box-shadow: 0 0 5px #ffdfdf;
-    border-radius: 5px;
+    box-shadow: 0 0 10px #ffdfdf;
+    border-radius: 10px;
     overflow: hidden;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* align-items: center; */
 }
 
 .card .top {
@@ -38,6 +41,8 @@ div {
 .card .drag-area {
     height: 150px;
     border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
     border: 2px dashed #0086fe;
     color: #0086fe;
     background: #f4f3f9;
@@ -51,7 +56,7 @@ div {
 }
 
 .card .drag-area .visible {
-    font-size: 18px;
+    font-size: 8px;
 }
 
 .card .select {
