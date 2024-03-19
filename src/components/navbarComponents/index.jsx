@@ -9,7 +9,7 @@ export const NavbarComponents = () => {
       <div className="container-fluid">
         <span className="img-home">
           <img src={mediScan} alt="" />
-          <Link className="navbar-brand" href="#">
+          <Link className="navbar-brand" to="/">
             MediScanAI
           </Link>
         </span>
@@ -29,7 +29,7 @@ export const NavbarComponents = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <Link className="nav-link active" aria-current="page" href="#">
+              <Link className="nav-link active" aria-current="page" to="/">
                 Home
               </Link>
             </li>

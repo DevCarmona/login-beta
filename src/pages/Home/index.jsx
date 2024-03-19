@@ -11,12 +11,6 @@ export const Home = () => {
     <>
       <NavbarComponents />
       <UploadMultipleComponent/>
-      {/* <LayoutHomeComponents>
-        <form className="home-form">
-          <span className="home-form-title">Inserir imagens</span>
-        <UploadComponents />
-        </form>
-      </LayoutHomeComponents> */}
     </>
   );
 };

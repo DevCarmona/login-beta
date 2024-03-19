@@ -70,37 +70,40 @@ export const UploadMultipleComponent = () => {
     }
 
     return (
-        <div className="card">
-            <div className="top">
-                <p>inserir imagem</p>
+        <div className="card-container">
+            <div className="card">
+                <div className="top">
+                    <p>inserir imagem</p>
+                </div>
+
+                <div className="drag-area" onDragOver={onDragOver} onDragLeave={onDragLeave} onDrop={onDrop}>
+                    {isDragging ? (
+                        <span className="select">coloque suas imagens aqui</span>
+                    ) : (
+                        <>
+                            Arraste e solte sua imagem aqui ou {" "}
+                        <span className="select" role="button" onClick={selectFiles}>
+                            Navegue
+                        </span>
+                        </>
+                    )}
+
+                    <input name="file" className="file" type="file" multiple ref={fileInputRef} onChange={onFileSelect}></input>
+                </div>
+
+                <div className="container">
+                    {images.map((images, index) => (
+                        <div className="image" key={index}>
+                            <span className="delete" onClick={() => deleteImage(index)}>&times;</span>
+                            <img src={images.url} alt={images.name} />
+                        </div>
+                    ))}
+
+                </div>
+
+                <button type="button" onClick={uploadImages}>Upload</button>
             </div>
 
-            <div className="drag-area" onDragOver={onDragOver} onDragLeave={onDragLeave} onDrop={onDrop}>
-                {isDragging ? (
-                    <span className="select">coloque suas imagens aqui</span>
-                ) : (
-                    <>
-                        Arraste e solte sua imagem aqui ou {" "}
-                    <span className="select" role="button" onClick={selectFiles}>
-                        Navegue
-                    </span>
-                    </>
-                )}
-
-                <input name="file" className="file" type="file" multiple ref={fileInputRef} onChange={onFileSelect}></input>
-            </div>
-
-            <div className="container">
-                {images.map((images, index) => (
-                    <div className="image" key={index}>
-                        <span className="delete" onClick={() => deleteImage(index)}>&times;</span>
-                        <img src={images.url} alt={images.name} />
-                    </div>
-                ))}
-
-            </div>
-
-            <button type="button" onClick={uploadImages}>Upload</button>
         </div>
     )
 }
